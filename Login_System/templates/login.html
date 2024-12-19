@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            background-image: url('path/to/your/background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5b4caf;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5945a0;
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', (event) => {
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                const messageBox = document.createElement('div');
+                messageBox.style.marginTop = '20px';
+                form.appendChild(messageBox);
+
+                if (username !== '' && password !== '') {
+                    messageBox.textContent = 'Login successful!';
+                    messageBox.style.color = 'green';
+                } else {
+                    event.preventDefault();
+                    messageBox.textContent = 'Both fields are required!';
+                    messageBox.style.color = 'red';
+                }
+            });
+
+            const button = document.querySelector('button');
+            button.addEventListener('mouseover', () => {
+                button.style.backgroundColor = '#45a049';
+            });
+            button.addEventListener('mouseout', () => {
+                button.style.backgroundColor = '#4CAF50';
+            });
+
+            const passwordField = document.getElementById('password');
+            const togglePassword = document.createElement('span');
+            togglePassword.textContent = 'Show';
+            togglePassword.style.cursor = 'pointer';
+            togglePassword.style.marginLeft = '10px';
+            passwordField.parentNode.appendChild(togglePassword);
+
+            togglePassword.addEventListener('click', () => {
+                if (passwordField.type === 'password') {
+                    passwordField.type = 'text';
+                    togglePassword.textContent = 'Hide';
+                } else {
+                    passwordField.type = 'password';
+                    togglePassword.textContent = 'Show';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
