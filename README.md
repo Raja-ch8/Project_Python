@@ -59,7 +59,7 @@ Cet environnement virtuel te permet de gérer les bibliothèques et les dépenda
 **Isolation :** Tu peux avoir différentes versions des bibliothèques pour chaque projet sans conflit.
 
 
-# **2. Projet : Quiz Game**
+### **2. Projet : Quiz Game**
 
 J'ai créé un projet en utilisant Python pour développer un Quiz Game, un jeu interactif qui permet de tester ses connaissances en répondant à différentes questions.
 
