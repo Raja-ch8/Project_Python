@@ -70,3 +70,12 @@ Une vérification automatique des réponses, pour savoir immédiatement si la r�
 Des éléments visuels interactifs, comme des émojis, pour rendre le jeu plus engageant.
 La possibilité de rejouer ou de quitter à tout moment.
 
+
+# **3. Projet : Login System**
+
+1 . Installare Flask 
+
+```bash 
+pip install flask
+```
+
