@@ -57,3 +57,16 @@ Cet environnement virtuel te permet de gérer les bibliothèques et les dépenda
 ###### **Avantages :**
 
 **Isolation :** Tu peux avoir différentes versions des bibliothèques pour chaque projet sans conflit.
+
+
+# **2. Projet : Quiz Game**
+
+J'ai créé un projet en utilisant Python pour développer un Quiz Game, un jeu interactif qui permet de tester ses connaissances en répondant à différentes questions.
+
+L'idée principale du projet est d'offrir une façon simple et amusante d'apprendre, en exploitant les capacités de Python. Le jeu inclut :
+
+Des questions à choix multiples parmi lesquelles choisir.
+Une vérification automatique des réponses, pour savoir immédiatement si la réponse est correcte.
+Des éléments visuels interactifs, comme des émojis, pour rendre le jeu plus engageant.
+La possibilité de rejouer ou de quitter à tout moment.
+
